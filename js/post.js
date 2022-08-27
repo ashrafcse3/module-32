@@ -33,7 +33,7 @@ function displayAllPosts(data) {
         postTitle.innerText = `Title: ${post.title}`;
 
         postDescription.classList.add('text-lg');
-        postDescription.innerText = `Description: ${post.body}`;
+        postDescription.innerHTML = `Description: ${post.body}`;
 
         div.appendChild(h3ID);
         div.appendChild(postTitle);
